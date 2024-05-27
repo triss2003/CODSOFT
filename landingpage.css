@@ -10,8 +10,8 @@
 }
 :root{
     --text-color: #fff;
-    --bg-color: #d7a7cc;
-    --main-color: #d28cbb;
+    --bg-color: #ffffff;
+    --main-color: #54b4ef;
     --h1-font: 6rem;
     --h2-font: 3rem;
     --p-font: 1rem;
@@ -46,7 +46,7 @@ span{
 .navbar a{
     color: var(--text-color);
     font-size: var(--p-font);
-    font-weight: 530;
+    font-weight: 200;
     margin: 15px 22px ;
     justify-content: space-between;
     transition: all .200s ease;
@@ -75,6 +75,41 @@ span{
     color: var(--main-color);
     transform: translateY(-2.5px);
 }
+.search{
+    width: 100%;
+    max-width: 30px;
+    padding: .5rem 1rem;
+    display:flex;
+    align-items:center;
+    gap: 1rem;
+    background-color: var(--text-color);
+    border-radius: 2rem;
+    transition: 0.3s;
+    box-shadow: 0 6px 13px rgb(0, 0, 0);
+}
+.login{
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 650;
+    color: var(--bg-color);
+    background-color: var(--main-color);
+    border-radius: 1.8rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.login:hover{
+    background-color: var(--text-color);
+}
+
+.login span{
+    padding: 5px 6px;
+    font-size: 1rem;
+    color:var(--main-color);
+    background-color: var(--text-color);
+    border-radius: 100%;
+}
 section{
   padding:80px 70px 90px;
 }
@@ -82,14 +117,82 @@ section{
     height: 100vh;
     width: 100%;
     font-size: 30px;
-    background-image: url();
-    background-size: cover;
-    background-position: cover;
+    background-image: url("explore.jpg");
+    background-size: 1400px 900px;
     display: flex;
     align-items: top;
-    justify-content:flex-start;
+    padding-left : 82px;
+    padding-top: 100px;
 }
 .home-text h6{
-    font-size:22px;
+    font-size:18px;
+    font-weight:700;
+    margin-bottom: 10px;
+    text-transform:uppercase;
+    letter-spacing: 3px;
     color: var(--main-color);
     }
+    .home-text h4{
+        font-size: 20px;
+        font-weight:100;
+        line-height: 1.2;
+        margin-bottom:20px;
+}
+.home-text p{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    letter-spacing: 1px;
+    }
+    .unleash{
+        color:var(--main-color);
+        padding-top: 10px;
+        font-size: 40px;
+    }
+    .button{
+        outline: none;
+        font-size: 1rem;
+        display: inline-flex;
+        padding: 0.75rem 2rem;
+        background-color: #494238;
+        color:var(--text-color);
+        border: none;
+        border-radius:5px;
+        font-weight: 500px;
+        transition: all 0.25s ease-in;
+        cursor: pointer;
+        text-decoration:double;
+}
+.button:hover {
+    color:var(--text-color);
+    background-color: var(--main-color);
+    transform: translateX(6.5px);
+}
+.hero_container{
+    display:flex;
+    grid-template-columns: repeat (3,1fr);
+    gap: 1rem;
+}
+.destinaton_card{
+    height: 100%;
+    background-color : var(--white);
+    box-shadow: 2px 2px 20px black;
+}
+.card_content{
+    padding: 1rem;
+}
+.card_content h4{
+    margin-bottom: 0.5rem;
+font-size: 1.2rem;
+font-weight: 600;
+color:var(--text-color);
+    }
+   .card_content p{
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+   line-height: 1.5rem;
+   color:var(--text-color);
+}
+
